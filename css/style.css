@@ -1,0 +1,216 @@
+/* /////////////////
+font family
+///////////////// */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/* ////////////////////////////////////
+variable
+////////////////////////////////////// */
+
+:root {
+    --main-color: #3A3A3A;
+    --bg-color: #E02C6D;
+    --white: #ffffff;
+}
+
+
+/* ///////////////////////////////////////
+common css
+////////////////////////////// */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    width: 1270px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+.button {
+    padding: 15px 20px;
+    background-color: var(--bg-color);
+    border-radius: 25px;
+    color: var(--white);
+    transition: 0.4s linear;
+}
+
+
+/* /////////////////////////////////////
+navbar css
+////////////////////////////////////// */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--bg-color);
+    height: 60px;
+}
+
+nav .logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--white);
+    line-height: 60px;
+    padding: 0 10px;
+}
+
+nav ul {
+    display: flex;
+    padding: 0 10px;
+}
+
+nav ul li {
+    margin-left: 30px;
+    line-height: 60px;
+}
+
+nav ul li a {
+    color: var(--white);
+    font-size: 16px;
+    transition: 0.4s ease-out;
+}
+
+nav ul li a:hover {
+    color: var(--main-color);
+}
+
+.check-button {
+    color: var(--white);
+    cursor: pointer;
+    font-size: 24px;
+    display: none;
+    padding-left: 10px;
+    line-height: 60px;
+}
+
+#check {
+    display: none;
+}
+
+.cart-mobile {
+    display: none;
+    color: var(--white);
+    font-size: 24px;
+    line-height: 60px;
+    padding-right: 10px;
+}
+
+
+/* ////////////////////////////////////
+banner css
+/////////////////////////////////// */
+
+.banner-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.banner-details a:hover.button {
+    color: var(--main-color);
+}
+
+.banner-details {
+    width: 600px;
+    height: 300px;
+    padding: 20px 10px;
+}
+
+.banner-description {
+    padding: 20px 0;
+}
+
+.banner-image {
+    width: 440px;
+    padding: 10px;
+}
+
+.banner-image img {
+    width: 100%;
+}
+
+.banner-title {
+    font-size: 52px;
+    color: var(--main-color);
+}
+
+
+/* //////////////////////////////////////
+mobile responsive
+//////////////////////////////////// */
+
+@media only screen and (max-width:575.98px) {
+    .container {
+        width: 100%;
+    }
+    .button {
+        padding: 10px 15px;
+        background-color: var(--bg-color);
+        border-radius: 25px;
+        color: var(--white);
+        transition: 0.4s linear;
+        font-size: 14px;
+    }
+    nav ul {
+        flex-direction: column;
+        position: absolute;
+        left: -200px;
+        top: 60px;
+        background-color: var(--bg-color);
+        transition: 0.4s ease-out;
+        line-height: 60px;
+    }
+    nav ul li {
+        margin-left: 0px;
+        line-height: 36px;
+    }
+    .check-button {
+        display: block;
+    }
+    #check:checked~ul {
+        left: 0;
+    }
+    .cart {
+        display: none;
+    }
+    .cart-mobile {
+        display: block;
+    }
+    .banner-main {
+        flex-direction: column;
+    }
+    .banner-left {
+        order: 2;
+    }
+    .banner-details {
+        width: 300px;
+        height: 200px;
+    }
+    .banner-title {
+        font-size: 28px;
+        color: var(--main-color);
+    }
+    .banner-description {
+        padding: 10px 0;
+        font-size: 14px;
+    }
+    .banner-image {
+        width: 260px;
+    }
+}
