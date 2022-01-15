@@ -310,6 +310,39 @@ featured css
 }
 
 
+/* /////////////////////////////////////////
+footer css
+/////////////////////////////////////////// */
+
+.footer-main {
+    background-color: var(--dark);
+    text-align: center;
+    color: var(--white);
+    padding: 50px 0;
+}
+
+.footer-logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--bg-color);
+}
+
+.reserved {
+    display: block;
+}
+
+.footer-links {
+    margin-top: 20px;
+}
+
+.social-link {
+    padding: 10px;
+    border-radius: 50%;
+    color: var(--white);
+    background-color: var(--main-color);
+}
+
+
 /* //////////////////////////////////////
 mobile responsive
 //////////////////////////////////// */
@@ -407,3 +440,8 @@ mobile responsive
         text-align: center;
     }
 }
+
+
+/* ///////////////////////////////////////////
+Tablet responsive
+//////////////////////////////////////// */
