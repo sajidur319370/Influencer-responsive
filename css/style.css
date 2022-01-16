@@ -124,6 +124,7 @@ banner css
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 50px 0;
 }
 
 .banner-button {
@@ -149,6 +150,10 @@ banner css
 }
 
 .banner-image {
+    background: url(../images/Circle\ design.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
     width: 440px;
     padding: 10px;
 }
